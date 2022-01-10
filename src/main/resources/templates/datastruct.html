@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::base(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title th:text="${title}"></title>
+<link rel="stylesheet" th:href="@{/CSS/style.css}" />
+</head>
+<body>
+	<section>
+		<div class="st">
+			<p>Stack is a linear data structure which follows a particular
+				order in which the operations are performed. The order may be
+				LIFO(Last In First Out) or FILO(First In Last Out). Mainly the
+				following three basic operations are performed in the stack: Push:
+				Adds an item in the stack. If the stack is full, then it is said to
+				be an Overflow condition. Pop: Removes an item from the stack. The
+				items are popped in the reversed order in which they are pushed. If
+				the stack is empty, then it is said to be an Underflow condition.
+				Peek or Top: Returns top element of stack. isEmpty: Returns true if
+				stack is empty, else false.</p>
+		</div>
+		<center>
+			<div>
+				<script th:src="@{/JS/app.js}"></script>
+				<button type="button" class="btn btn-success bt1"
+					onclick="pushData()">Push</button>
+				<button type="button" class="btn btn-danger bt2" onclick="popData()">Pop</button>
+			</div>
+		</center>
+		<div id="ds" th:fragment="pallet">
+			<a href="/Array"><button class="dsbt">Array</button></a>
+			<br>
+			<a href="/LL"><button class="dsbt">LinkedList</button></a>
+			<br>
+			<a href="/DS"><button class="dsbt">Stack</button></a>
+			<br>
+			<a href="/queue"><button class="dsbt">Queue</button></a>
+			<br>
+			<a href="/tree"><button class="dsbt">Tree</button></a>
+			<br>
+		</div>
+	</section>
+</body>
+</html>

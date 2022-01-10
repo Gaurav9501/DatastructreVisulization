@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::base(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title th:text="${title}"></title>
+<link rel="stylesheet" th:href="@{/CSS/style.css}" />
+</head>
+<body>
+	<section>
+
+		<div class="st">
+			<p>A linked list is a sequence of data structures, which are
+				connected together via links. Linked List is a sequence of links
+				which contains items. Each link contains a connection to another
+				link. Linked list is the second most-used data structure after
+				array. Following are the important terms to understand the concept
+				of Linked List.</p>
+		</div>
+		<div>
+			<script th:src="@{/JS/Linklist.js}"></script>
+			<button type="button" class="btn btn-success " onclick="addFirst()">Add First</button>
+			<button type="button" class="btn btn-success " onclick="addLast()">Add Last</button>
+			<button type="button" class="btn btn-success " onclick="addPosition()">Add Position</button>
+			
+			<button type="button" class="btn btn-success " onclick="printArr()">print</button>
+			<button type="button" class="btn btn-success " onclick="removeLast()">remove Last</button>
+			<button type="button" class="btn btn-success " onclick="removePosition()">remove Position</button>
+			<button type="button" class="btn btn-success " onclick="removeFirst()">remove First</button>
+			
+		</div>
+		<div th:replace="datastruct::pallet"></div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+.st{
+	 border-radius: 25px;
+  background: #73AD21;
+  padding: 20px;
+}
+
+.st2{
+	
+	backgrond:white;
+	width:20%;
+	height:20%;
+}
+
+canvas {
+  display: block;
+    border:30px solid #d3d3d3;  
+  
+}
+
+.bt1{
+	position: absolute;
+    left: 400px;
+    top:500px;
+}
+.bt2{
+	position: absolute;
+    left: 800px;
+    top:500px;
+}
+
+#val{
+	position: absolute;
+    left: 500px;
+    top:500px;
+	
+}
+
+
+#ds{
+	position:absolute;
+	left:1030px;
+	top:200px;
+}
+
+
+.dsbt{
+	width:480px;
+	height:100px;
+}
